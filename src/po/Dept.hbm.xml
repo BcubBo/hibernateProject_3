@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        <hibernate-mapping>
+        	<class name="po.Dept" table="`DEPT`" dynamic-update="true">
+        	
+        	
+        	<id name="deptNo" type="java.lang.Byte">
+        		<column name="deptno"></column>
+        		<generator class="assigned"/>
+        	
+        	
+        	
+        	
+        	
+        	
+        	</id>
+        	<property name="deptName" type="java.lang.String">
+        	<column name="dname"></column>
+        	
+        	</property>
+        	
+        	<property name="location" type="java.lang.String">
+        	
+        	<column name="lco"></column>
+        	
+        	
+        	</property>
+        	
+        	<set name="emps" cascade="all">
+        		<key column="DEPTNO"></key>
+        		<one-to-many class="po.Emp"></one-to-many>
+        	
+        	
+        	
+        	</set>
+
+        	
+        	</class>
+        
+        
+        
+        
+        
+        
+  </hibernate-mapping>
+  
+  
+  
+  
+ 
