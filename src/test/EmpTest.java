@@ -1,10 +1,9 @@
 package test;
 
 import biz.EmpBiz;
-import po.Dept;
 import po.Emp;
 
-public class Test {
+public class EmpTest {
 	
 	public static void main(String[]args){
 		

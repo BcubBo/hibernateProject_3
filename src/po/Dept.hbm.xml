@@ -8,7 +8,7 @@
         	
         	<id name="deptNo" type="java.lang.Byte">
         		<column name="NO"></column>
-        		<generator class="increment"/>
+        		<generator class="assigned"/>
         	
         	
         	

@@ -34,7 +34,16 @@ public class Dept implements Serializable {
 	this.deptNo = deptNo;
 	this.deptName = deptName;
 	this.location = location;
-}
+	}
+	
+	public Dept(String deptName,String location){
+		
+		super();
+		this.deptName = deptName;
+		this.location = location;
+		
+		
+	}
 	public Dept(Byte deptNo){
 		
 		this.deptNo = deptNo;
