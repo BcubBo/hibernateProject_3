@@ -12,7 +12,7 @@
 			<id name="empNo" type="java.lang.Integer">
 	    		
 	    			<column name="empno"></column>
-	    			<generator class="assigned"	></generator>
+	    			<generator class="increment"	></generator>
 	    		
 	    		
 	    		
