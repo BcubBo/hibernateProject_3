@@ -41,8 +41,10 @@ public class DeptDao {
 	
 	
 	public void delete(Dept dept){
-	
-		HibernateSessionFactory.getSession().delete(dept);
+		
+		Dept toDelete = (Dept)HibernateSessionFactory.getSession().get(Dept.class, dept.getDeptNo());
+	//如果想让级联删除操作更顺畅，要先进行查询
+		HibernateSessionFactory.getSession().delete(toDelete);
 		
 	
 	

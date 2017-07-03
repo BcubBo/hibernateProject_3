@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import biz.DeptBiz;
+import biz.EmpBiz;
 import po.Dept;
 import po.Emp;
 
@@ -15,8 +16,8 @@ public class DeptTest {
 		
 		
 //		biz.findDeptById((byte)20);
-		
-		Dept dept = new Dept((byte)60,"new department","unknown");
+/*		
+		Dept dept = new Dept((byte)70,"new department","unknown");
 		
 		Emp emp1,emp2,emp3 =null;
 		emp1 = new Emp();
@@ -45,7 +46,39 @@ public class DeptTest {
 			
 			empsArray[i].setDept(dept);
 		}
-		biz.addNewDept(dept);
+		
+		
+		biz.addNewDept(dept);*/
+		///////////////////////////////////////////////
+		
+		
+/*		Dept dept = biz.findDeptById((byte)70);
+		Emp emp = new EmpBiz().findById((Integer)7945);
+		
+		dept.getEmps().add(emp);
+		emp.setDept(dept);
+		//更改的字段的参数不要搞错
+		
+		biz.modifyDept(dept);
+		//因为关联cascade所以只要更新部门顺带就会将其关联的对象和数据进行了更改
+*/
+		///////////////////////////////////////////////////
+		
+		
+		
+		Dept dept = new Dept((byte)70);
+		biz.deleteDept(dept);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	

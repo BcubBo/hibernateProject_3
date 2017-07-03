@@ -9,12 +9,6 @@
         	<id name="deptNo" type="java.lang.Byte">
         		<column name="NO"></column>
         		<generator class="assigned"/>
-        	
-        	
-        	
-        	
-        	
-        	
         	</id>
         	<property name="deptName" type="java.lang.String">
         	<column name="DNAME"></column>

@@ -4,7 +4,9 @@ import org.hibernate.HibernateException;
 import org.hibernate.Transaction;
 
 import common.HibernateSessionFactory;
+import dao.DeptDao;
 import dao.EmpDao;
+import po.Dept;
 import po.Emp;
 
 public class EmpBiz {
@@ -61,7 +63,9 @@ public class EmpBiz {
 		try{
 			
 			tx = HibernateSessionFactory.getSession().beginTransaction();
+			Dept dept = new DeptDao().findDeptById(emp.getDept().getDeptNo());
 			
+			emp.setDept(dept);
 			dao.save(emp);
 			
 			tx.commit();

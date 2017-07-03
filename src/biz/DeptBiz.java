@@ -56,7 +56,7 @@ public class DeptBiz {
 			
 			tx.commit();
 			
-			
+			System.out.println("<----\t修改成功\t---->");
 			
 		}catch(HibernateException e){
 			
@@ -65,7 +65,7 @@ public class DeptBiz {
 			if(tx != null){
 				
 				tx.rollback();
-				
+				System.out.println("<----\t已回滚\t---->");
 				
 			}
 			

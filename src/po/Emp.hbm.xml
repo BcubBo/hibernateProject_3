@@ -39,7 +39,7 @@
 	    		
 	    	</property>
 	    	
-	    	<many-to-one name="dept" class="po.Dept" column="DEPTNO">
+	    	<many-to-one name="dept" class="po.Dept" column="DEPTNO" cascade="save-update,delete">
 
 	    		
 	    		

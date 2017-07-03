@@ -1,6 +1,7 @@
 package test;
 
 import biz.EmpBiz;
+import po.Dept;
 import po.Emp;
 
 public class EmpTest {
@@ -12,16 +13,16 @@ public class EmpTest {
 		
 //		biz.findById((Integer)7369);
 		
-/*		Emp emp = new Emp();
+		Emp emp = new Emp();
 		
-		emp.setEmpName("new Emp");;
+		emp.setEmpName("cascade");;
 		
-		Dept dept = new Dept((byte)20);
+		Dept dept = new Dept((byte)60);
 		
 		emp.setDept(dept);
 		//关联映射的时候要将多对一或者一对多的集合进行属性的赋值
 		biz.addNewEmp(emp);
-*///ta\\添加过程
+//ta\\添加过程
 		
 /*		Emp emp = new Emp();
 		
@@ -35,10 +36,10 @@ public class EmpTest {
 		biz.modifyEmp(emp);*///修改过程
 		
 		
-		Emp emp = new Emp();
+/*		Emp emp = new Emp();
 		emp.setEmpNo((Integer)7941);
 		
-		biz.delete(emp);
+		biz.delete(emp);*/
 		
 		
 	}
