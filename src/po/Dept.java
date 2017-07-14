@@ -3,9 +3,13 @@ package po;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+
+import javax.persistence.Entity;
 /**
  * 部门表对应的实体类
  */
+
+
 public class Dept implements Serializable {
 	/**
 	 * 
