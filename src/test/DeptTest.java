@@ -66,8 +66,8 @@ public class DeptTest {
 		
 		
 		
-		Dept dept = new Dept((byte)70);
-		biz.deleteDept(dept);
+		Dept dept = new Dept((byte)90);
+		biz.saveDept(dept);
 		
 		
 		

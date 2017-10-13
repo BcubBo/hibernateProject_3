@@ -24,7 +24,7 @@ public class DeptDao {
 		
 		
 		
-		HibernateSessionFactory.getSession().save(dept);
+		HibernateSessionFactory.getSession().saveOrUpdate(dept);
 		
 		
 		
